@@ -1,0 +1,39 @@
+#main {
+    display: grid;
+    max-height: 860px;
+}
+
+.box  {
+    margin: 35px 15px;
+}
+
+
+.reasons  {
+    padding: 10px 0px;
+}
+
+
+
+
+@media only screen and (max-width: 500px) {
+    .container {
+      text-align: center;
+    }
+}
+
+
+
+
+article {
+    margin: 0px;
+}
+
+
+
+
+
+@media only screen and (max-width: 500px) {
+    .container {
+
+    }
+}
