@@ -61,21 +61,17 @@ header {
 
 header h1 {
     margin: 0;
-}
-
-.container {
-    margin: 0 auto;
-    max-width: 900px;
-    text-align: center;
+    padding: 0px 10px;
+    font-size: 40px;
 }
 
 figcaption {
     color: white;
     font-size: 20px;
+    text-align: center;
 }
 
 #main {
-    max-width: 100%;
     background-color: #111;
     padding-top: 30px;
 }
@@ -96,16 +92,9 @@ figcaption {
     color: white;
 }
 
-.html {
-    overflow-y: scroll;
-}
-
-.css {
-    overflow-y: scroll;
-}
-
 .reasons  {
     display: block;
+    padding: 0px 10px;
 }
 
 em {
@@ -118,10 +107,10 @@ strong {
 }
 
 @media only screen and (min-width: 1366px) {
-    .container {
+
+    header h1 {
         max-width: 900px;
         margin: 0 auto;
-        text-align: left;
     }
 
     .html {
@@ -137,11 +126,12 @@ strong {
     .reasons  {
         grid-column-start: 2;
         display: block;
+        padding-top: 34px;
     }
 
     #main {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: 33% 34% 33%;;
         grid-template-rows: repeat(1, 1fr);
     }
 
@@ -156,6 +146,33 @@ strong {
     em {
         display: none;
     }
+
+    pre {
+        max-height: 800px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+
+    header h1 {
+        font-size: 55px;
+    }
+}
+
+@media only screen and (min-height: 1080px) {
+
+    header {
+        height: 23vh;
+    }
+
+    footer {
+        height: 7vh;
+    }
+
+    #main {
+        height: 75vh;
+    }
+
 }
 
 
@@ -174,6 +191,7 @@ footer  {
 }
 
 footer p {
+    text-align: center;
     padding: 20px 0px;
     margin: 0;
 }
